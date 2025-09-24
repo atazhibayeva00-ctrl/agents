@@ -69,6 +69,8 @@ record_unknown_question_json = {
     }
 }
 
+
+
 tools = [{"type": "function", "function": record_user_details_json},
         {"type": "function", "function": record_unknown_question_json}]
 
@@ -77,8 +79,8 @@ class Me:
 
     def __init__(self):
         self.openai = OpenAI()
-        self.name = "Ed Donner"
-        reader = PdfReader("me/linkedin.pdf")
+        self.name = "Aliya Tazhibayeva"
+        reader = PdfReader("me/linkedin_me.pdf")
         self.linkedin = ""
         for page in reader.pages:
             text = page.extract_text()
